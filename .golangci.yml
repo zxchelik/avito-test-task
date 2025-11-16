@@ -1,0 +1,23 @@
+run:
+  timeout: 5m
+  tests: true
+
+linters:
+  enable-all: false
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - gosimple
+    - unused
+    - misspell
+  disable:
+    - revive
+
+issues:
+  max-same-issues: 10
+  exclude-use-default: false
+
+output:
+  formats:
+    - format: colored-line-number
