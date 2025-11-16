@@ -12,6 +12,7 @@
 ### 🔹 Docker
 
 ```bash
+cp .env.example .env
 make run
 # или
 docker compose up -d
